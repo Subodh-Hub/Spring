@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  background-color: black;
+}
+
+*, html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --primary-color: #7DF9FF;
+  --accent-color: #FFFF00;
+  --neutral-color:#C0C0C0;
+}
+* li, html li, body li {
+  list-style: none;
+}
+* a, html a, body a {
+  text-decoration: none;
+  color: var(--neutral-color);
+}
+* header, html header, body header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75px;
+  background-color: black;
+}
+* header .logo, html header .logo, body header .logo {
+  width: 20vw;
+  font-size: 2.3rem;
+  display: flex;
+  justify-content: center;
+}
+* header .logo span, html header .logo span, body header .logo span {
+  color: var(--primary-color);
+}
+* header nav ul, html header nav ul, body header nav ul {
+  width: 40vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+* header nav ul li a, html header nav ul li a, body header nav ul li a {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+* header nav ul li a:hover, html header nav ul li a:hover, body header nav ul li a:hover {
+  color: var(--primary-color);
+}
+* header .icon, html header .icon, body header .icon {
+  width: 25vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+* header .icon .fa-solid, html header .icon .fa-solid, body header .icon .fa-solid {
+  color: var(--neutral-color);
+  font-size: 1.7rem;
+}
+* header .icon .fa-solid:hover, html header .icon .fa-solid:hover, body header .icon .fa-solid:hover {
+  color: var(--primary-color);
+}
+* header .icon .fa-brands, html header .icon .fa-brands, body header .icon .fa-brands {
+  color: var(--neutral-color);
+  font-size: 1.7rem;
+}
+* header .icon .fa-brands:hover, html header .icon .fa-brands:hover, body header .icon .fa-brands:hover {
+  color: var(--primary-color);
+}
+* header .button, html header .button, body header .button {
+  font-weight: 400;
+  display: flex;
+  width: 15vw;
+  justify-content: space-around;
+  align-items: center;
+}
+* header .button .log-in, html header .button .log-in, body header .button .log-in {
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+* header .log-in:hover, html header .log-in:hover, body header .log-in:hover {
+  background-color: var(--primary-color);
+  color: black;
+}
+* .hero, html .hero, body .hero {
+  position: absolute;
+  background-image: url("/image/nathan-dumlao-zUNs99PGDg0-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position-x: 20%;
+  background-position-y: 20%;
+  background-size: cover;
+  height: 89vh;
+  width: 50%;
+  left: unset;
+  right: 0;
+}
+* .container, html .container, body .container {
+  padding: 40px;
+  width: 50%;
+}
+* .container h1, html .container h1, body .container h1 {
+  font-size: 3rem;
+  color: var(--accent-color);
+  margin-top: 2em;
+  line-height: 8rem;
+}
+* .container p, html .container p, body .container p {
+  font-size: 1.4rem;
+  color: var(--neutral-color);
+}
+* .container svg, html .container svg, body .container svg {
+  stroke: var(--primary-color);
+  height: 150px;
+  width: 6vw;
+  margin-left: 20vw;
+  animation: moveArrow 1s alternate-reverse infinite;
+}
+* .container svg path, html .container svg path, body .container svg path {
+  fill: var(--primary-color);
+}
+* .wrapper, html .wrapper, body .wrapper {
+  width: 99vw;
+  height: 500vh;
+  margin-top: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+* .wrapper .description, html .wrapper .description, body .wrapper .description {
+  margin-top: 23vh;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+* .wrapper .description h1, html .wrapper .description h1, body .wrapper .description h1 {
+  font-size: 3rem;
+  color: #1e3932;
+  font-weight: 600;
+}
+* .wrapper .description p, html .wrapper .description p, body .wrapper .description p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #1e3932;
+}
+* .wrapper .description a .ordernow, html .wrapper .description a .ordernow, body .wrapper .description a .ordernow {
+  border: 1px solid #1e3932;
+  color: #1e3932;
+  font-weight: 600;
+  padding: 7px 16px;
+  border-radius: 150px;
+}
+* .wrapper .item1, html .wrapper .item1, body .wrapper .item1 {
+  position: relative;
+  height: 90vh;
+  width: 89vw;
+  background-color: #b2b267;
+  display: flex;
+}
+* .wrapper .item1 img, html .wrapper .item1 img, body .wrapper .item1 img {
+  height: 100%;
+  width: 50%;
+}
+* .wrapper .item2, html .wrapper .item2, body .wrapper .item2 {
+  position: relative;
+  height: 90vh;
+  width: 89vw;
+  background-color: #e99264;
+  display: flex;
+}
+* .wrapper .item2 img, html .wrapper .item2 img, body .wrapper .item2 img {
+  height: 100%;
+  width: 50%;
+}
+* .wrapper .item3, html .wrapper .item3, body .wrapper .item3 {
+  height: 90vh;
+  width: 89vw;
+  background-color: #337481;
+  display: flex;
+}
+* .wrapper .item3 img, html .wrapper .item3 img, body .wrapper .item3 img {
+  height: 100%;
+  width: 50%;
+}
+* .wrapper .item4, html .wrapper .item4, body .wrapper .item4 {
+  height: 90vh;
+  width: 89vw;
+  background-color: #dad74b;
+  display: flex;
+}
+* .wrapper .item4 img, html .wrapper .item4 img, body .wrapper .item4 img {
+  height: 100%;
+  width: 50%;
+}
+* .wrapper .item5, html .wrapper .item5, body .wrapper .item5 {
+  height: 90vh;
+  width: 89vw;
+  background-color: #2b6f73;
+  display: flex;
+}
+* .wrapper .item5 img, html .wrapper .item5 img, body .wrapper .item5 img {
+  height: 100%;
+  width: 50%;
+}
+
+@keyframes moveArrow {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}/*# sourceMappingURL=main.css.map */
